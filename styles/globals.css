@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:#03070a;color:#c8d8e8;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:#1a3a2a;border-radius:99px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+@keyframes flicker{0%,100%{opacity:1;}93%{opacity:.5;}94%{opacity:1;}}
+.fade-up{animation:fadeUp .4s ease forwards;}
+button{font-family:inherit;cursor:pointer;border:none;outline:none;}
