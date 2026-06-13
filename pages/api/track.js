@@ -276,16 +276,7 @@ export async function runWhaleTracker() {
         await sendTelegram(alertMsg);
         await new Promise(r => setTimeout(r, 600));
 
-        // Alert message 2 — APEX verification prompt
-        const apexMsg =
-          `━━━━━━━━━━━━━━━━━━━━━━━━\n` +
-          `📋 <b>PASTE INTO APEX TO VERIFY:</b>\n` +
-          `━━━━━━━━━━━━━━━━━━━━━━━━\n\n` +
-          `<code>${apexPrompt}</code>`;
-
-        await sendTelegram(apexMsg);
-        await new Promise(r => setTimeout(r, 600));
-      } else {
+} else {
         console.log(`[TRACKER] ${wallet.label} trade filtered — rugRisk: ${analysis.rugRisk} shouldAlert: ${analysis.shouldAlert}`);
       }
 
